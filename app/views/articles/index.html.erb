@@ -3,8 +3,7 @@
 	<% @articles.each do |article| %>
 		<div class="blog-post">
 			<h2 class="blog-post-title"><%= article.title %></h2>
-			<%= link_to article.title, article_path(article) %>
-			<%= article.body %>
+			<%= link_to "Read more", article_path(article) %>
 		</div>
 	<% end %>
 </ul>
